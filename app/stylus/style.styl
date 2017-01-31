@@ -1,0 +1,127 @@
+@import 'nib'
+
+global-reset()
+    
+body
+    font-size 14px
+    background-color #ffffff
+    font-weight 400
+    font-family 'Times New Roman',sans-serif
+    min-width 320px
+    
+.img-responsive
+    max-width 100%
+    height auto;
+    display inline-block
+    
+.content
+    color #969696
+    font-size 14px;
+    line-height 20px
+    letter-spacing .5px
+    
+.content-header
+    color #000000
+    font-family 'Tahoma Bold',sans-serif
+    font-weight 700
+    font-size 18px
+    margin-bottom 15px
+    
+.container
+    lost-center 1024px
+    padding 0 15px
+    
+    .type-of-content
+        display flex
+        background-color #f0f0f0
+        padding 20px
+        margin-top 80px
+        
+        .content-img
+            width 40%
+            margin 0 15px
+         
+        .about-content
+            width 60%
+            margin 0 15px
+            
+        .content-block
+            display flex
+            flex-direction column
+            justify-content space-between
+        .about-content
+            .about-content-title
+                font-size 24px
+                line-height 30px
+                margin-bottom 20px
+                
+            .about-content-snippit
+                letter-spacing .5px
+                margin-bottom 20px
+                
+        .read-more
+            .btn
+                &.btn-read-more
+                    click-shrink()
+                    button #d53f36
+                    font-size 16px
+                    font-weight 100
+                    letter-spacing .5px
+                
+    .product-item
+        background-color #ececec
+        .button
+            font-weight normal
+            color white
+            display inline-block
+            &.btn_read_more
+                click-shrink()
+                button red
+                
+    .type-of-content          
+        +below(768px)
+            flex-direction column      
+            margin-top 40px
+            
+            .content-img,
+            .about-content
+                width 100%
+                margin 10px 0
+ 
+                
+.strategy
+    padding 20px 0 
+
+    .strategy-body
+        margin 20px 0
+        display flex
+        align-items center
+        flex-wrap wrap
+        
+        .strategy-advanture
+            display flex
+            align-items center
+            width 25%
+        
+            .advanture-title
+                font-style italic
+                font-weight 500
+                letter-spacing .5px
+                margin 0 10px
+                color #000000
+    
+    .strategy-body
+        +below(768px)
+            
+            .strategy-advanture
+                width 50%
+                padding 15px 0
+                
+        +below(600px)
+            .strategy-advanture
+                width 100%
+                
+.articles
+    margin-bottom 50px
+    .post
+        margin-bottom 20px
